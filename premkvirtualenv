@@ -1,3 +1,4 @@
 #!/bin/bash
 # This hook is run after a new virtualenv is created and before it is activated.
 
+mkdir $WORKON_HOME/$1/src
