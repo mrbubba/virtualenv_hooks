@@ -2,6 +2,6 @@
 # This hook is run after every virtualenv is activated.
 
 my_env=`basename $VIRTUAL_ENV`
-echo Setting DJANGO_SETTINGS_MODULE to $my_env.settings
-export DJANGO_SETTINGS_MODULE=$my_env.settings
+echo Setting DJANGO_SETTINGS_MODULE to $my_env.settings.main
+export DJANGO_SETTINGS_MODULE=$my_env.settings.main
 cd $VIRTUAL_ENV/src
