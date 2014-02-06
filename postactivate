@@ -3,8 +3,8 @@
 
 #If the user has any personal preferences they should be set 
 #per environment in this file
-if [ -f $VIRTUAL_ENV/prefs ]; then
-        . $VIRTUAL_ENV/prefs
+if [ -f $VIRTUAL_ENV/envrc ]; then
+        . $VIRTUAL_ENV/envrc
 fi
 
 cd $VIRTUAL_ENV/src
