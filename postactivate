@@ -3,8 +3,12 @@
 
 #If the user has any personal preferences they should be set 
 #per environment in this file
+proj_name=$(basename $VIRTUAL_ENV)
+
 if [ -f $VIRTUAL_ENV/envrc ]; then
+        echo "found envrc for $proj_name"
         . $VIRTUAL_ENV/envrc
 fi
 
-cd $VIRTUAL_ENV/src
+echo $PROJECT_HOME/$proj_name
+cd $PROJECT_HOME/$proj_name
